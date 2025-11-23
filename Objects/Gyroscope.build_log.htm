@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¬µVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Dmitriy Ka, Ã√“” ËÏ.¡‡ÛÏ‡Ì‡, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.42.0.0
+Toolchain Path:  D:\my_programs\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\my_programs\Keil\Projects\Gyroscope\Gyroscope.uvprojx
+Project File Date:  11/16/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'D:\my_programs\ARM\ARMCLANG\Bin'
+Build target 'Gyroscope'
+Src/Config.c(2): warning: In file included from...
+./Inc\main.h(11): warning: non-portable path to file '"w25q32jv.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   11 | #include "W25Q32JV.h"
+      |          ^~~~~~~~~~~~
+      |          "w25q32jv.h"
+Src/Config.c(2): warning: In file included from...
+./Inc\main.h(6): warning: In file included from...
+./Inc\GPIO.h(48): warning: unused function 'GPIO_EnableClocks' [-Wunused-function]
+   48 | static void GPIO_EnableClocks(void);
+      |             ^~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling Config.c...
+Src/main.c(1): warning: In file included from...
+./Inc\main.h(11): warning: non-portable path to file '"w25q32jv.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   11 | #include "W25Q32JV.h"
+      |          ^~~~~~~~~~~~
+      |          "w25q32jv.h"
+Src/main.c(1): warning: In file included from...
+./Inc\main.h(6): warning: In file included from...
+./Inc\GPIO.h(48): warning: unused function 'GPIO_EnableClocks' [-Wunused-function]
+   48 | static void GPIO_EnableClocks(void);
+      |             ^~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling main.c...
+Src/stm32f1xx_it.c(1): warning: In file included from...
+./Inc\main.h(11): warning: non-portable path to file '"w25q32jv.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   11 | #include "W25Q32JV.h"
+      |          ^~~~~~~~~~~~
+      |          "w25q32jv.h"
+Src/stm32f1xx_it.c(1): warning: In file included from...
+./Inc\main.h(6): warning: In file included from...
+./Inc\GPIO.h(48): warning: unused function 'GPIO_EnableClocks' [-Wunused-function]
+   48 | static void GPIO_EnableClocks(void);
+      |             ^~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling stm32f1xx_it.c...
+compiling l3g4200d.c...
+linking...
+Program Size: Code=19980 RO-data=1060 RW-data=20 ZI-data=1800  
+".\Objects\Gyroscope.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
