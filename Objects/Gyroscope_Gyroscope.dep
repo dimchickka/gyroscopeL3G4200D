@@ -325,7 +325,7 @@ I (Inc\GPIO.h)(0x69198A91)
 I (Inc\LED.h)(0x691975E0)
 I (Inc\USART.h)(0x691989EF)
 I (Inc\I2C.h)(0x69198EE4)
-I (Inc\l3g4200d.h)(0x6922B8DF)
+I (Inc\l3g4200d.h)(0x6922E570)
 I (Inc\W25Q32JV.h)(0x6919F28F)
 I (Inc\SPI.h)(0x6919DAB6)
 F (.\Src\GPIO.c)(0x6922B6DC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/gpio.o -MMD)
@@ -459,7 +459,7 @@ I (Inc\GPIO.h)(0x69198A91)
 I (Inc\LED.h)(0x691975E0)
 I (Inc\USART.h)(0x691989EF)
 I (Inc\I2C.h)(0x69198EE4)
-I (Inc\l3g4200d.h)(0x6922B8DF)
+I (Inc\l3g4200d.h)(0x6922E570)
 I (Inc\W25Q32JV.h)(0x6919F28F)
 I (Inc\SPI.h)(0x6919DAB6)
 F (.\Src\stm32f1xx_it.c)(0x6919F6D7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/stm32f1xx_it.o -MMD)
@@ -492,12 +492,12 @@ I (Inc\GPIO.h)(0x69198A91)
 I (Inc\LED.h)(0x691975E0)
 I (Inc\USART.h)(0x691989EF)
 I (Inc\I2C.h)(0x69198EE4)
-I (Inc\l3g4200d.h)(0x6922B8DF)
+I (Inc\l3g4200d.h)(0x6922E570)
 I (Inc\W25Q32JV.h)(0x6919F28F)
 I (Inc\SPI.h)(0x6919DAB6)
 I (Inc\stm32f1xx_it.h)(0x69187F9F)
-F (.\Src\l3g4200d.c)(0x6919F715)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/l3g4200d.o -MMD)
-I (Inc\l3g4200d.h)(0x6922B8DF)
+F (.\Src\l3g4200d.c)(0x6922E56F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/l3g4200d.o -MMD)
+I (Inc\l3g4200d.h)(0x6922E570)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x6915FC27)
 I (Inc\stm32f1xx_hal_conf.h)(0x6919DA40)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x6915FC27)

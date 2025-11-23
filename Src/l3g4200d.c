@@ -1,7 +1,7 @@
 #include "l3g4200d.h"
 
 
-float sensitivity = 8.75e-3f; // dps per LSB for 250 dps full scale
+float sensitivity = 70.0e-3f; // dps per LSB for 2000 dps full scale
 
 uint8_t Gyro_Init(I2C_HandleTypeDef *hi2c, UART_HandleTypeDef* huart){
 	uint8_t dataReg = 0;
@@ -60,9 +60,9 @@ void Gyro_Read_Velocity(I2C_HandleTypeDef *hi2c, GyroData_t* data){
 			I2C_TIMEOUT_MS
 	);
 	
-	data->x_current = (uint16_t)((buf[1] << 8) | buf[0]);
-	data->y_current = (int16_t)((buf[3] << 8) | buf[2]);
-    data->z_current = (int16_t)((buf[5] << 8) | buf[4]);
+	data->x_current = ((int16_t)((buf[1] << 8) | buf[0]))*sensitivity;
+	data->y_current = ((int16_t)((buf[3] << 8) | buf[2]))*sensitivity;
+    data->z_current = ((int16_t)((buf[5] << 8) | buf[4]))*sensitivity;
   
 }
 
@@ -73,17 +73,9 @@ void prepareStructure(GyroData_t* data){
 }
 
 void calculateAcceleration(GyroData_t* data, float DT){
-    float x_prev_deg_s = data->x_prev * sensitivity;
-    float y_prev_deg_s = data->y_prev * sensitivity;
-    float z_prev_deg_s = data->z_prev * sensitivity;
-    
-    float x_current_deg_s = data->x_current * sensitivity;
-    float y_current_deg_s = data->y_current * sensitivity;
-    float z_current_deg_s = data->z_current * sensitivity;
-    
-    data->ax = (x_current_deg_s - x_prev_deg_s) / DT;
-    data->ay = (y_current_deg_s - y_prev_deg_s) / DT;
-    data->az = (z_current_deg_s - z_prev_deg_s) / DT;
+    data->ax = (data->x_current - data->x_prev) / DT;
+    data->ay = (data->y_current - data->y_prev) / DT;
+    data->az = (data->z_current - data->z_prev) / DT;
 }
 
 void startGettingData(I2C_HandleTypeDef *hi2c,UART_HandleTypeDef* huart, GyroData_t* data){
@@ -96,8 +88,8 @@ void startGettingData(I2C_HandleTypeDef *hi2c,UART_HandleTypeDef* huart, GyroDat
     else{
         Gyro_Read_Velocity(hi2c,data);
         
-         char buf_uart[120];
-         snprintf(buf_uart, sizeof(buf_uart),
+        char buf_uart[160];
+        snprintf(buf_uart, sizeof(buf_uart),
          "X: prev=%d current=%d | "
          "Y: prev=%d current=%d | "
          "Z: prev=%d current=%d\r\n",
@@ -105,7 +97,7 @@ void startGettingData(I2C_HandleTypeDef *hi2c,UART_HandleTypeDef* huart, GyroDat
          data->y_prev, data->y_current,
          data->z_prev, data->z_current);
 
-HAL_UART_Transmit(huart, (uint8_t*)buf_uart, strlen(buf_uart), UART_TIMEOUT_MKS);
+        HAL_UART_Transmit(huart, (uint8_t*)buf_uart, strlen(buf_uart), UART_TIMEOUT_MKS);
         
         calculateAcceleration(data, STEP_TO_READ_S);
         prepareStructure(data);

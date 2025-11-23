@@ -13,12 +13,16 @@
 #define L3G4200D_OUT_X_L 0x28
 #define I2C_TIMEOUT_MS 10  // мс
 #define UART_TIMEOUT_MKS 10  // мкс
-#define STEP_TO_READ_MS 100 // мс
-#define STEP_TO_READ_S 0.10f // с
+#define STEP_TO_READ_MS 10 // мс
+#define STEP_TO_READ_S 0.01f // с
 
 // Configuration values
 #define L3G4200D_CTRL_REG1_CONFIG 0x7F // Normal mode, all axes enabled, 200Hz, 70Hz cutoff
-#define L3G4200D_CTRL_REG4_CONFIG 0x00  // 250 dps full scale
+#define L3G4200D_CTRL_REG4_CONFIG 0x20  // 2000 dps full scale
+
+
+#define PI 3.14
+#define HALF_OF_CIRCLE_IN_DEGREES 180
 
 typedef struct {
     int16_t x_prev, y_prev, z_prev;
