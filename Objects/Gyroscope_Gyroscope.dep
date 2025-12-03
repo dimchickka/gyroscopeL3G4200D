@@ -295,7 +295,7 @@ I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_i2c.h)(0x6915FC27)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6915FC27)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x6915FC27)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6915FC27)
-F (.\Src\Config.c)(0x6922B854)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/config.o -MMD)
+F (.\Src\Config.c)(0x692D80DE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/config.o -MMD)
 I (Inc\Config.h)(0x6919A091)
 I (Inc\main.h)(0x6919F42E)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x6915FC27)
@@ -328,7 +328,7 @@ I (Inc\I2C.h)(0x69198EE4)
 I (Inc\l3g4200d.h)(0x6922E570)
 I (Inc\W25Q32JV.h)(0x6919F28F)
 I (Inc\SPI.h)(0x6919DAB6)
-F (.\Src\GPIO.c)(0x6922B6DC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/gpio.o -MMD)
+F (.\Src\GPIO.c)(0x692D8190)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/gpio.o -MMD)
 I (Inc\GPIO.h)(0x69198A91)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x6915FC27)
 I (Inc\stm32f1xx_hal_conf.h)(0x6919DA40)
@@ -429,7 +429,7 @@ I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x6915FC27)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x6915FC27)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x6915FC27)
 I (Inc\Config.h)(0x6919A091)
-F (.\Src\main.c)(0x6922B894)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/main.o -MMD)
+F (.\Src\main.c)(0x692D7D21)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./Inc -I ./PeriphLib/CMSIS/Device/ST/STM32F1xx/Include -I ./PeriphLib/STM32F1xx_HAL_Driver/Inc -I ./PeriphLib/CMSIS/Include-ID:/my_programs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_MD -DSTM32F103xB-o ./objects/main.o -MMD)
 I (Inc\main.h)(0x6919F42E)
 I (PeriphLib\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x6915FC27)
 I (Inc\stm32f1xx_hal_conf.h)(0x6919DA40)

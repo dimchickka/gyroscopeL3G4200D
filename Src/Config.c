@@ -10,6 +10,7 @@ void MCU_Init(void){
     GPIO_Init_All();
     UART_Init_All();
     I2C_Init_All();
+    SPI_Init_All();
 }
 
 
